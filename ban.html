@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Page</title>
+    <script>
+        // 禁用右键菜单
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        }, false);
+
+        // 禁用F12键和Ctrl+Shift+I组合键
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                e.preventDefault();
+            }
+        }, false);
+    </script>
+</head>
+<body>
+    <h1>Secure Page</h1>
+    <p>This page attempts to restrict developer tools access.</p>
+    <!-- flag{FLAG_HERE} -->
+</body>
+</html>

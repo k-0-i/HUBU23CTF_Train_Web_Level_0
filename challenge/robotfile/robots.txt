@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /1822ec8e-4046-11ef-9985-00155d451265.txt

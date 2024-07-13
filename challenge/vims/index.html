@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* 背景颜色 */
+            font-family: Arial, sans-serif; /* 字体样式 */
+            padding: 20px; /* 页面内边距 */
+        }
+
+        h2, h3 {
+            color: #333; /* 标题颜色 */
+            margin-bottom: 20px; /* 标题下方的外边距 */
+        }
+
+        h2 {
+            font-size: 24px; /* 字体大小 */
+        }
+
+        h3 {
+            font-size: 18px; /* 字体大小 */
+        }
+
+        span {
+            background-color: #ff0; /* 突出显示的文本背景颜色 */
+            padding: 2px 4px; /* 文本内边距 */
+            border-radius: 4px; /* 边角圆滑 */
+        }
+    </style>
+</head>
+<body>
+    <h3>Vim 在编辑文件时会创建一个交换（swap）文件，这是一种临时文件，用于在发生崩溃时恢复编辑中的文件。交换文件的扩展名通常是 .swp。这个特性可以在编辑大文件或者在不稳定的系统上工作时非常有用，因为它可以帮助你恢复未保存的更改。</h3>
+    <h2> 比如，正在编辑一个名为index.txt的文件，当你意外关闭了编辑器，你会看到一个名为<span style="color:red">.index.txt.swp</span>的文件出现在你的文件夹中。这时，你可以编辑这个文件，然后保存它，以便在下次打开编辑器时恢复你的更改。</h2>
+    <h2>Challenge: 编写flag.txt时发生了中断，你需要恢复你的更改。你应该如何恢复这个文件？</h2>
+</body>
+</html>

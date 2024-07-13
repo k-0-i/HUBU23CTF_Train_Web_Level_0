@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖北大学网络空间安全学院 23级 CTF暑期培训</title>
+</head>
+<body>
+    <p>robots.txt文件是一种用于管理和控制搜索引擎爬虫访问网站内容的文本文件。它位于网站的根目录下，向搜索引擎指示哪些部分可以被爬取，哪些部分不能被爬取。其主要作用是帮助网站管理员避免不必要的内容爬取，保护隐私数据，减轻服务器负担，并提升网站的SEO表现。</p>
+
+    <h2>robots.txt文件语法</h2>
+    <p>robots.txt文件中，每一行都代表一条规则，规则以“User-agent”开头，后面跟着一个名称，如“Googlebot”、“Bingbot”等。如果名称为“*”，则表示对所有爬虫生效。“Disallow”关键字后面跟着一个URL或目录，表示不允许爬取该URL或目录及其子目录的内容。</p>
+
+
+    <p>例如，以下内容表示对所有爬虫不允许爬取“/secret”目录及其子目录的内容：</p>
+
+    <pre>User-agent: *
+Disallow: /secret/</pre>
+
+    <p>如果网站有多个子域名，则可以在robots.txt文件中为每个子域名单独设置规则，如：</p>
+
+    <pre>User-agent: *
+Disallow: /secret/
+
+
+User-agent: baidu
+Disallow: /secret/
+
+
+User-agent: googlebot
+Disallow: /secret/</pre>
+
+
+
+</body>
+</html>

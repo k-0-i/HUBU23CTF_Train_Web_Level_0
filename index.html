@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖北大学 23级CTF暑期培训</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        a:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .floating-links {
+            position: fixed; /* 使用 fixed 定位，使链接组悬浮 */
+            top: 50%; /* 距离页面顶部 50% */
+            left: 50%; /* 距离页面左侧 50% */
+            transform: translate(-50%, -50%); /* 使用 transform 调整位置，确保正中央 */
+            text-align: center;
+            background-color: #ffffff; /* 背景颜色 */
+            border-radius: 10px; /* 边框圆角 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+            padding: 10px; /* 内边距 */
+        }
+        .top-half-background {
+            height: 50vh; /*视口高度的 50% */
+            width: 100%; /* 宽度为 100% */
+            background-image: url('./door.jpg'); /* 替换为您的图片 URL */
+            background-size: cover; /* 背景图覆盖整个容器 */
+            background-position: center; /* 背景图居中显示 */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-half-background"></div>
+
+    <div class="floating-links">
+        <a href="./get.php">GET 请求方法</a>
+        <a href="./post.php">POST 请求方法</a>
+        <a href="./login.php">暴力破解</a>
+        <a href="./302.php">302 跳转</a>
+        <a href="./ban.html">查看源码</a>
+        <a href="./challenge/robotfile/">Robots 文件</a>
+        <a href="./challenge/source_leak/">源码泄露</a>
+        <a href="./challenge/git_leak/">Git泄露(1)</a>
+        <a href="./challenge/git_stash/">Git泄露(2)</a>
+        <a href="./challenge/vims/">Vim 书写中断</a>
+    </div>
+</body>
+</html>
